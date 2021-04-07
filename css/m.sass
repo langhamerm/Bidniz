@@ -1,0 +1,45 @@
+$font-stack: Helvetica, sans-serif,
+$primary-color: red,
+$second-color: snow,
+$mello-yello: rgba(240, 240, 85, 0.849),
+$font-shadow: 1px 1px #333,
+$logo-w: 50px,
+$logo-h: 50px 
+body 
+	font: 100% $font-stack,
+	background-color: $primary-color,
+	color: $second-color
+
+
+nav, footer 
+	background-color: $mello-yello !important,
+
+ul
+	list-style: none,
+	display: flex,
+	flex-direction: row,
+	justify-content: center
+
+#logo
+	width: $logo-w,
+	height: $logo-h
+
+ul li
+	margin-left: 1rem,
+	text-shadow: $font-shadow
+
+
+a
+	text-decoration: none,
+
+footer
+	height: fit-content,
+	position: relative,
+	top: 100vh
+
+div.card
+	border-radius: 50px
+
+.waves-ripple
+	width: 100%,
+	height: fit-content
